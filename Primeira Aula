@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MeuPrimeiroProjeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Seja bem vindo!");
+            string conteudo;
+            string numero;
+
+            Console.WriteLine("Etapa 1");
+            Console.Write("Por favor, digite um texto: ");
+            conteudo = Console.ReadLine();
+            Console.WriteLine("O texto informado foi: " + conteudo);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Etapa 2");
+            Console.Write("Digite um número: ");
+            numero = Console.ReadLine();
+            int dobro = int.Parse(numero) * 2;
+            int triplo = int.Parse(numero) * 3;
+            Console.WriteLine("O dobro do número digitado é: " + dobro);
+            Console.WriteLine("O triplo do número digitado é: " + triplo);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Etapa 3");
+            Console.Write("Digite outro número: ");
+            numero = Console.ReadLine();
+            Console.WriteLine("O número digitado é: " + numero);
+            int menor = int.Parse(numero) - 1;
+            int maior = int.Parse(numero) + 1;
+            Console.WriteLine("O número abaixo é: " + menor);
+            Console.WriteLine("O número acima é: " + maior);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Etapa 4");
+            Console.Write("Digite um número: ");
+            string numero1 = Console.ReadLine();
+            Console.Write("Digite o segundo número: ");
+            string numero2 = Console.ReadLine();
+            Console.Write("Digite o terceiro número: ");
+            string numero3 = Console.ReadLine();
+            int soma = int.Parse(numero1) + int.Parse(numero2) + int.Parse(numero3);
+            Console.WriteLine("A soma dos três número é: " + soma);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Etapa 5");
+            Console.Write("Digite um número: ");
+            numero1 = Console.ReadLine();
+            Console.Write("Digite o segundo número: ");
+            numero2 = Console.ReadLine();
+            Console.Write("Digite o terceiro número: ");
+            numero3 = Console.ReadLine();
+            Console.WriteLine("O números impressos são: " + numero3 + ", " + numero2 + ", " + numero1);
+            Console.ReadLine();
+
+        }
+    }
+}
