@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0;
+
+
+            while (n == 0)
+            {
+                Console.Write("Digite um numero de 0 a 100: ");
+                int numero = int.Parse(Console.ReadLine());
+                if (numero < 100)
+                {
+                    while (numero != 100)
+                    {
+                        Console.WriteLine(numero);
+                        numero++;
+                    }
+                    Console.WriteLine(numero);
+                    n = 1;
+                }
+                else if (numero == 100)
+                {
+                    Console.WriteLine(numero);
+                    n = 1;
+                }
+                else
+                {
+                    Console.WriteLine("Número invalido, somente de 0 a 100");
+                }
+            }
+            Console.WriteLine("Fim");
+            Console.ReadLine();
+        }
+    }
+}
