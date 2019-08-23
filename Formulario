@@ -1,0 +1,121 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace nome
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome!");
+            Console.WriteLine("Please, fill the form.");
+            Console.WriteLine(" ");
+            string firstname;
+            int lenght;
+            string[] nameSpace;
+
+            do
+            {
+                Console.Write("First Name: ");
+                firstname = Console.ReadLine();
+                lenght = firstname.Length;
+                nameSpace = firstname.Split(' ');
+                if (nameSpace.Length > 2)
+                {
+                    Console.WriteLine("Invalid First Name!");
+                    Console.WriteLine("Requires: more than 5 characters and contain max one space");
+                }
+                else if (lenght < 5)
+                {
+                    Console.WriteLine("Invalid First Name!");
+                    Console.WriteLine("Requires: more than 5 characters and contain max one space");
+                }
+                else
+                {
+                    break;
+                }
+            }
+            while (true);
+
+            string middlename;
+
+            do
+            {
+                Console.Write("Middle Name: ");
+                middlename = Console.ReadLine();
+                lenght = middlename.Length;
+                nameSpace = middlename.Split(' ');
+                if (nameSpace.Length > 1)
+                {
+                    Console.WriteLine("Invalid Middle Name!");
+                    Console.WriteLine("Requires: 3 or more characters and not contain space");
+                }
+                else if (lenght < 3)
+                {
+                    Console.WriteLine("Invalid Middle Name!");
+                    Console.WriteLine("Requires: 3 or more characters and not contain space");
+                }
+                else
+                {
+                    break;
+                }
+            }
+            while (true);
+
+            string lastname;
+
+            do
+            {
+                Console.Write("Last Name: ");
+                lastname = Console.ReadLine();
+                lenght = lastname.Length;
+                nameSpace = lastname.Split(' ');
+                if (nameSpace.Length > 1)
+                {
+                    Console.WriteLine("Invalid Last Name!");
+                    Console.WriteLine("Requires: 3 or more characters and not contain space");
+                }
+                else if (lenght < 3)
+                {
+                    Console.WriteLine("Invalid Last Name!");
+                    Console.WriteLine("Requires: 3 or more characters and not contain space");
+                }
+                else
+                {
+                    break;
+                }
+            }
+            while (true);
+
+            string email;
+            string[] emailSpace;
+
+            do
+            {
+                Console.Write("First Name: ");
+                firstname = Console.ReadLine();
+                lenght = firstname.Length;
+                nameSpace = firstname.Split(' ');
+                if (nameSpace.Length > 2)
+                {
+                    Console.WriteLine("Invalid First Name!");
+                    Console.WriteLine("Requires: more than 5 characters and contain max one space");
+                }
+                else if (lenght < 5)
+                {
+                    Console.WriteLine("Invalid First Name!");
+                    Console.WriteLine("Requires: more than 5 characters and contain max one space");
+                }
+                else
+                {
+                    break;
+                }
+            }
+            while (true);
+            Console.ReadLine();
+        }
+    }
+}
